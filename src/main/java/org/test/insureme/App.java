@@ -26,7 +26,7 @@ public class App
           "D:\\New folder\\chromedriver-win64\\chromedriver.exe");  
         //setting up properties -chrome options
       ChromeOptions chromeOptions= new ChromeOptions();
-      //chromeOptions.addArguments("--headless");
+      chromeOptions.addArguments("--headless");
       //open url
       WebDriver driver = new ChromeDriver(chromeOptions);
       //driver.get("http://localhost:8081/contact.html");
