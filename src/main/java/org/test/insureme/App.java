@@ -15,6 +15,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 public class App 
 {
     public static void main( String[] args ) throws InterruptedException, IOException
@@ -24,6 +26,7 @@ public class App
       //initializing web driver
       /*System.setProperty("webdriver.chrome.driver", 
           "D:\\New folder\\chromedriver-win64\\chromedriver.exe");*/
+      WebDriverManager.chromedriver().setup();
         //setting up properties -chrome options
       ChromeOptions chromeOptions= new ChromeOptions();
       chromeOptions.addArguments("--headless");
@@ -62,7 +65,7 @@ public class App
       File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
       //File destFile = new File ("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
       //File destFile = new File ("D:\\videos-staragile\\mod7-capstone\\test-reports.jpg");
-      File destFile = new File ("\\var\\lib\\jenkins\\workspace\\insure-me-test-scripts\\test-reports.jpg");
+      File destFile = new File ("var\\lib\\jenkins\\workspace\\insure-me-test-scripts\\test-reports.jpg");
       FileUtils.copyFile(srcFile, destFile);
       
       Thread.sleep(1000); 
