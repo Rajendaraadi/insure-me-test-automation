@@ -31,6 +31,7 @@ public class App
       ChromeOptions chromeOptions= new ChromeOptions();
       chromeOptions.addArguments("--headless");
       //open url
+      System.out.println("Driver opening up the url in browser");
       WebDriver driver = new ChromeDriver(chromeOptions);
       //driver.get("http://localhost:8081/contact.html");
       driver.get("http://65.2.39.10:8081/contact.html");
