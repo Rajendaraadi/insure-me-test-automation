@@ -65,7 +65,7 @@ public class App
       File srcFile = srcShot.getScreenshotAs(OutputType.FILE);
       //File destFile = new File ("/var/lib/jenkins/workspace/insure-me-test-scripts/test-reports.jpg");
       //File destFile = new File ("D:\\videos-staragile\\mod7-capstone\\test-reports.jpg");
-      File destFile = new File ("var\\lib\\jenkins\\workspace\\insure-me-test-scripts\\test-reports.jpg");
+      File destFile = new File ("/var/lib/jenkins/workspace/test-reports.jpg");
       FileUtils.copyFile(srcFile, destFile);
       
       Thread.sleep(1000); 
