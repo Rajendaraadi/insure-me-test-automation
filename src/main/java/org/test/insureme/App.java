@@ -39,7 +39,7 @@ public class App
       //http://localhost:8081/contact.html
       //wait to load page 
       driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-      System.out.println( "opening browser" );
+      //System.out.println( "opening browser" );
       //enter details
       System.out.println( "Entering details in the form" );      
       // email
