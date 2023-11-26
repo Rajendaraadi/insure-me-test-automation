@@ -22,8 +22,8 @@ public class App
         
         System.out.println( "Script started" );
       //initializing web driver
-      System.setProperty("webdriver.chrome.driver", 
-          "D:\\New folder\\chromedriver-win64\\chromedriver.exe");  
+      /*System.setProperty("webdriver.chrome.driver", 
+          "D:\\New folder\\chromedriver-win64\\chromedriver.exe");*/
         //setting up properties -chrome options
       ChromeOptions chromeOptions= new ChromeOptions();
       chromeOptions.addArguments("--headless");
